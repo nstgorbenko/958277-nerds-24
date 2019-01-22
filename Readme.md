@@ -1,6 +1,6 @@
 # Личный проект «Нёрдс»
 
-* Студент: [Анастасия](https://up.htmlacademy.ru/htmlcss/24/user/958277).
+* Студент: [Анастасия](https://htmlacademy.ru/profile/id958277).
 * Наставник: [Артём Рудов] (https://htmlacademy.ru/profile/artrudov).
 
 ---
