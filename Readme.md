@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
-* Студент: [Анастасия Горбенко] (https://htmlacademy.ru/profile/id958277).
-* Наставник: [Артём Рудов] (https://htmlacademy.ru/profile/artrudov).
+* Студент: [Анастасия Горбенко](https://htmlacademy.ru/profile/id958277).
+* Наставник: [Артём Рудов](https://htmlacademy.ru/profile/artrudov).
 
 ---
 
