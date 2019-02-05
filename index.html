@@ -129,12 +129,30 @@
       </section>
 
         <ul class="footer-social">
-          <li><a class="social-button vk" href="#">Вконтакте</a></li>
-          <li><a class="social-button fb" href="#">Фейсбук</a></li>
-          <li><a class="social-button ig" href="#">Инстаграм</a></li>
+          <li><a class="social-btn vk" href="#">Вконтакте</a></li>
+          <li><a class="social-btn fb" href="#">Фейсбук</a></li>
+          <li><a class="social-btn ig" href="#">Инстаграм</a></li>
         </ul>
         <p class="footer-lead">Давайте дружить, это выгодно!
           <span>Скидка 10% для друзей из социальных сетей.</span></p>
     </footer>
+
+    <section class="write">
+      <h2>Напишите нам</h2>
+      <form class="letter" method="post" action="https://echo.htmlacademy.ru">
+        <div class="half-width">
+          <label for="name">Ваше имя:</label>
+          <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+        </div>
+        <div class="half-width">
+          <label for="email">Ваш e-mail:</label>
+          <input type="email" name="email" id="email" placeholder="email@example.com">
+        </div>
+        <label for="message">Текст письма:</label>
+        <textarea name="message" id="message" rows="3" placeholder="В свободной форме"></textarea>
+        <button class="write-btn" type="submit">Отправить</button>
+        <button class="write-close" type="button" id="close"></button>
+      </form>
+    </section>
   </body>
 </html>
