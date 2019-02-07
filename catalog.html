@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: каталог Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
@@ -23,15 +26,15 @@
       <h1>Магазин готовых шаблонов</h1>
       <section class="sorting">
         <h2 class="visually-hidden">Сортировка</h2>
-        <p>Сортировать</p>
+        <p>Сортировать:</p>
         <ul class="sorting-features">
-          <li class="sorting-item current"><button class="sorting-features-btn" type="button" id="price">По цене</button></li>
-          <li class="sorting-item"><button class="sorting-features-btn" type="button" id="type">По типу</button></li>
-          <li class="sorting-item"><button class="sorting-features-btn" type="button" id="name">По названию</button></li>
+          <li class="sorting-item current"><a href="#">По цене</a></li>
+          <li class="sorting-item"><a href="#">По типу</a></li>
+          <li class="sorting-item"><a href="#">По названию</a></li>
         </ul>
         <ul class="sorting-direction">
-          <li class="down"><button class="sorting-direction-btn" type="button" id="down" aria-label="По убыванию"></button></li>
-          <li class="up"><button class="sorting-direction-btn" type="button" id="up" aria-label="По возрастанию"></button></li>
+          <li class="down current"><a href="#" aria-label="По убыванию"></a></li>
+          <li class="up"><a href="#" aria-label="По возрастанию"></a></li>
         </ul>
       </section>
     </header>
@@ -41,7 +44,7 @@
         <aside class="filter">
           <h2 class="visually-hidden">Фильтры</h2>
           <form method="get" action="https://echo.htmlacademy.ru"></form>
-            <fieldset>
+            <fieldset class="filter-price">
               <legend>Стоимость:</legend>
               <label for="min">От</label>
               <input type="number" name="min" id="min" step="1000" placeholder="0">
@@ -90,7 +93,7 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="filter-btn" type="submit">Показать</button>
+            <button class="button filter-btn" type="submit">Показать</button>
           </form>
         </aside>
 
@@ -101,7 +104,7 @@
                 <div class="model-description">
                   <h2 class="model-title"><a href="#">Sedona</a></h2>
                   <p class="model-text">Информационный сайт для туристов</p>
-                  <p class="model-price">9 900 РУБ.</p>
+                  <p class="button btn-red model-price">9 900 РУБ.</p>
                 </div>
                 <img src="img/sedona.jpg" width="360" height="576" alt="Проект «Sedona»">
               </article>
@@ -111,7 +114,7 @@
                 <div class="model-description">
                   <h2 class="model-title"><a href="#">Pink App</a></h2>
                   <p class="model-text">Продуктовый лендинг приложения для iOS и Android</p>
-                  <p class="model-price">9 900 РУБ.</p>
+                  <p class="button btn-red model-price">9 900 РУБ.</p>
                 </div>
                 <img src="img/pink.jpg" width="360" height="576" alt="Проект «Pink App»">
               </article>
@@ -121,7 +124,7 @@
                 <div class="model-description">
                   <h2 class="model-title"><a href="#">Barbershop</a></h2>
                   <p class="model-text">Сайт салона красоты. Для мужчин, да.</p>
-                  <p class="model-price">9 900 РУБ.</p>
+                  <p class="button btn-red model-price">9 900 РУБ.</p>
                 </div>
                 <img src="img/barbershop.jpg" width="360" height="576" alt="Проект «Barbershop»">
               </article>
@@ -131,7 +134,7 @@
                 <div class="model-description">
                   <h2 class="model-title"><a href="#">Mishka</a></h2>
                   <p class="model-text">Интернет-магазин вязаных игрушек</p>
-                  <p class="model-price">9 900 РУБ.</p>
+                  <p class="button btn-red model-price">9 900 РУБ.</p>
                 </div>
                 <img src="img/mishka.jpg" width="360" height="576" alt="Проект «Mishka»">
               </article>
@@ -141,7 +144,7 @@
                 <div class="model-description">
                   <h2 class="model-title"><a href="#">A Plus</a></h2>
                   <p class="model-text">Лендинг курсов повышения квалификации</p>
-                  <p class="model-price">9 900 РУБ.</p>
+                  <p class="button btn-red model-price">9 900 РУБ.</p>
                 </div>
                 <img src="img/aplus.jpg" width="360" height="576" alt="Проект «A Plus»">
               </article>
@@ -151,7 +154,7 @@
                 <div class="model-description">
                   <h2 class="model-title"><a href="#">Кваст</a></h2>
                   <p class="model-text">Промо-сайт производителя крафтового кваса</p>
-                  <p class="model-price">9 900 РУБ.</p>
+                  <p class="button btn-red model-price">9 900 РУБ.</p>
                 </div>
                 <img src="img/kvast.jpg" width="360" height="576" alt="Проект «Кваст»">
               </article>
@@ -163,10 +166,10 @@
 
     <footer class="main-footer">
       <ul class="paginator" aria-label="Переход нас страницу">
-        <li><a class="current">1</a></li>
-        <li><a href="">2</a></li>
-        <li><a href="">3</a></li>
-        <li><a href="">Следующая</a></li>
+        <li class="paginator-item"><a class="button current">1</a></li>
+        <li class="paginator-item"><a class="button" href="">2</a></li>
+        <li class="paginator-item"><a class="button" href="">3</a></li>
+        <li class="paginator-item"><a class="button" href="">Следующая</a></li>
       </ul>
 
       <section class="map">
@@ -174,11 +177,11 @@
             <section class='address container'>
               <address>
                 <p class="address-title">Nёrds design studio</p>
-                <p>191186, Санкт-Петербург,<br> 
+                <p class="address-text">191186, Санкт-Петербург,<br> 
                    ул. Б. Конюшенная, д. 19/8</p>    
                 <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
               </address>
-              <p class="address-btn"><a href="#">Напишите нам</a></p>
+              <button class="button btn-red address-btn" type="button">Напишите нам</button>
             </section>
         </section>
     
@@ -204,7 +207,7 @@
         </div>
         <label for="message">Текст письма:</label>
         <textarea name="message" id="message" rows="3" placeholder="В свободной форме"></textarea>
-        <button class="write-btn" type="submit">Отправить</button>
+        <button class="button btn-red write-btn" type="submit">Отправить</button>
         <button class="write-close" type="button" id="close"></button>
       </form>
     </section>
