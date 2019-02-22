@@ -15,11 +15,13 @@
           <img src="img/logo.svg" width="160" height="65" alt="Логотип дизайн-студии «Нёрдс»">
         </a>
         <ul class="site-navigation list-reset">
-          <li><a href="#">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
-          <li><a href="#">Корзина</a></li>
+          <li class="site-navigation-item"><a href="#">Студия</a></li>
+          <li class="site-navigation-item"><a href="#">Клиенты</a></li>
+          <li class="site-navigation-item"><a href="catalog.html">Магазин</a></li>
+          <li class="site-navigation-item"><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="user-navigation list-reset">
+          <li class="site-navigation-item"><a href="#">Корзина</a></li>
         </ul>
       </nav>
     </header>
@@ -30,9 +32,9 @@
       <section class="slider">
         <h2 class="visually-hidden">Принципы работы</h2>
         <div class="container">
-          <input class="visually-hidden" type="radio" name="toggle" id="toggle-1" checked>
-          <input class="visually-hidden" type="radio" name="toggle" id="toggle-2">
-          <input class="visually-hidden" type="radio" name="toggle" id="toggle-3">
+          <input class="toggle-1 visually-hidden" type="radio" name="toggle" id="toggle-1" checked>
+          <input class="toggle-2 visually-hidden" type="radio" name="toggle" id="toggle-2">
+          <input class="toggle-3 visually-hidden" type="radio" name="toggle" id="toggle-3">
           <div class="slider-controls">
             <label class="switch-1" for="toggle-1"></label>
             <label class="switch-2" for="toggle-2"></label>
@@ -47,7 +49,7 @@
             </li>
             <li class="slider-image list-reset">
                 <p class="slider-lead">Любим математику как никто другой</p>
-                <p class="slider-text">>Никакого креатива, только математические формулы<br> для расчета идеальных пропорций.</p>
+                <p class="slider-text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
                 <p class="button btn-red slider-btn"><a href="#">Узнать больше</a></p>
               <img src="img/slide2.png" width="663" height="430" alt="">
             </li>
@@ -117,27 +119,28 @@
       <section class="partners">
         <h2 class="visually-hidden">Партнеры студии</h2>
           <ul class="partners-list list-reset container">
-            <li class="partners-item"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" alt="Ссылка на сайт HTML Academy"></a></li>
-            <li class="partners-item"><a href="#"><img src="img/logo-2.png" alt="Ссылка на сайт Barbershop Borodinski"></a></li>
-            <li class="partners-item"><a href="#"><img src="img/logo-3.png" alt="Ссылка на сайт Pink App"></a></li>
-            <li class="partners-item"><a href="#"><img src="img/logo-4.png" alt="Ссылка на сайт Mishka"></a></li>
+            <li class="partners-item"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" width="199" height="68" alt="Ссылка на сайт HTML Academy"></a></li>
+            <li class="partners-item"><a href="#"><img src="img/logo-2.png" width="209" height="90" alt="Ссылка на сайт Barbershop Borodinski"></a></li>
+            <li class="partners-item"><a href="#"><img src="img/logo-3.png" width="185" height="52" alt="Ссылка на сайт Pink App"></a></li>
+            <li class="partners-item"><a href="#"><img src="img/logo-4.png" width="173" height="84" alt="Ссылка на сайт Mishka"></a></li>
           </ul>
       </section>
     </main>
 
     <footer class="main-footer">
-      <section class="map">
-        <h2 class='visually-hidden'>Контакты</h2>
+      <section class="address">
+        <h2 class="visually-hidden">Контакты</h2>
         <div class="container">
-          <section class='address'>
-            <address>
+          <address>
             <p class="address-title">Nёrds design studio</p>
             <p class="address-text">191186, Санкт-Петербург,<br> 
               ул. Б. Конюшенная, д. 19/8</p>    
             <a class="address-text" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-            <a class="button btn-red address-btn">Напишите нам</a>
-            </address>
-          </section>
+            <a href="writeus.html" class="button btn-red address-btn">Напишите нам</a>
+          </address>
+          </div>
+        <div class="map">
+          <iframe src="https://yandex.ru/map-widget/v1/-/CCQSu85N" width="1440" height="416" allowfullscreen></iframe>
         </div>
       </section>
       
@@ -175,5 +178,7 @@
         <a class="write-close" href="#"></a>
       </form>
     </section>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
