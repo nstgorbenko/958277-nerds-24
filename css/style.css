@@ -36,7 +36,8 @@ img {
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+input[type="radio"].visually-hidden,
+input[type="button"].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -232,6 +233,14 @@ input[type="radio"].visually-hidden {
   background: #ffffff;
   border: 2px solid #c1c1c1;
   border-radius: 50%;
+}
+
+.toggle-1:focus ~ .slider-controls .switch-1::after,
+.toggle-2:focus ~ .slider-controls .switch-2::after,
+.toggle-3:focus ~ .slider-controls .switch-3::after {
+  box-shadow:
+		0 0 0 3px #fff,
+		0 0 0 5px #a7c5f7;
 }
 
 .btn-red,
@@ -520,7 +529,7 @@ input[type="radio"].visually-hidden {
 .map {
   position: absolute;
   top: 0px;
-  left: 0px;
+  left: -120px;
   height: 416px;
   width: 1440px;
   background: #e1e1e1 url(../img/map.jpg) no-repeat 0 0;
@@ -548,6 +557,7 @@ input[type="radio"].visually-hidden {
   height: 416px;
 }
 .address .container {
+  position: relative;
   padding-top: 55px;
 }
 
@@ -684,12 +694,13 @@ address {
 
 .write {
   position: fixed;
-  top: 10px;
+  top: 50%;
   left: 50%;
   display: none;
   z-index: 4;
   width: 760px;
   min-height: 438px;
+  margin-top: -219px;
   margin-left: -480px;
   padding: 68px 100px 84px;
   background-color: #ffffff;
@@ -986,6 +997,7 @@ address {
 
 .range-controls .toggle {
   position: absolute;
+  content: "";
   top: 30px;
   left: 0px;
   width: 4px;
@@ -996,6 +1008,12 @@ address {
   box-shadow: 0 2px 1px 0 #cfcfcf;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.range-controls input:focus + label {
+  box-shadow:
+		0 0 0 1px #fff,
+		0 0 0 3px #a7c5f7;
 }
 
 .range-controls .toggle-min {
