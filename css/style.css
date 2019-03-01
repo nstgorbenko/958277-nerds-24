@@ -467,6 +467,8 @@ input[type="button"].visually-hidden {
 
 .partners-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   width: 1115px;
   padding-bottom: 38px;
 }
@@ -476,12 +478,12 @@ input[type="button"].visually-hidden {
   margin-right: 100px;
 }
 
-.partners-list li:first-child {
+.partners-list li:nth-child(1) {
   align-self: flex-end;
   padding-bottom: 5px;
 }
 
-.partners-list li:last-child {
+.partners-list li:nth-child(4) {
   align-self: flex-end;
   margin-right: 30px;
   margin-left: auto;
