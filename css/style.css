@@ -18,7 +18,8 @@ img {
   height: auto;
 }
 
-.button {
+.button,
+.button a {
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
@@ -63,6 +64,14 @@ input[type="button"].visually-hidden {
   background-color: #eeeeee;
 }
 
+.main-header-logo img:hover {
+  opacity: 0.8;
+}
+
+.main-header-logo img:active {
+  opacity: 0.3;
+}
+
 .main-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -90,7 +99,7 @@ input[type="button"].visually-hidden {
 }
 
 .site-navigation-item {
-  padding: 0px 20px;
+  padding: 0 20px;
 }
 
 .user-navigation {
@@ -108,7 +117,7 @@ input[type="button"].visually-hidden {
 }
 
 .user-navigation .site-navigation-item {
-  padding-right: 0px;
+  padding-right: 0;
 }
 
 .user-navigation a {
@@ -120,7 +129,7 @@ input[type="button"].visually-hidden {
   content: "";
   position: absolute;
   top: 1px;
-  left: 0px;
+  left: 0;
   width: 15px;
   height: 15px;
   background: url("../img/cart-icon.svg") no-repeat 0 0;
@@ -135,7 +144,7 @@ input[type="button"].visually-hidden {
   color: #fb565a;
 }
 
-.site-navigation-item a:active {
+.site-navigation-item a:not(.current):active {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -162,7 +171,7 @@ input[type="button"].visually-hidden {
   width: 106px;
   height: 18px;
   margin-left: -43px;
-  font-size: 0px;
+  font-size: 0;
 }
 
  .slider-controls label {
@@ -204,12 +213,16 @@ input[type="button"].visually-hidden {
 .slider-lead {
   width: 515px;
   padding-top: 69px;
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 25px;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
   color: #000000;
+}
+
+.slider-lead span {
+  display: block;
 }
 
 .slider-text {
@@ -276,20 +289,17 @@ input[type="button"].visually-hidden {
 }
 
 .btn-red:hover,
-.btn-red:hover a {
+.btn-red a:hover {
   color: #ffffff;
   background-color: #e74246;
 }
 
 .btn-red:active,
-.btn-red:active a {
+.btn-red a:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #d7373b;
-}
-
-.btn-red:active {
-  -webkit-box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
-          box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  -webkit-box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
+          box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .service .container{
@@ -320,7 +330,7 @@ input[type="button"].visually-hidden {
 }
 
 .service-item-launch {
-  margin-right: 0px;
+  margin-right: 0;
   background: url(../img/illustration-3.jpg) no-repeat 0 0;
 }
 
@@ -340,7 +350,7 @@ input[type="button"].visually-hidden {
 
 .service-btn {
   width: 130px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .service-btn a {
@@ -349,50 +359,38 @@ input[type="button"].visually-hidden {
   padding: 16px 15px;
 }
 
-.btn-green,
 .btn-green a {
   color: #ffffff;
   background-color: #00ca74;
 }
 
-.btn-green:hover,
-.btn-green:hover a {
+.btn-green a:hover {
   color: #ffffff;
   background-color: #00bc6c;
 }
 
-.btn-green:active,
-.btn-green:active a {
+.btn-green a:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #00aa62;
+  -webkit-box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
+          box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
-.btn-green:active {
-  -webkit-box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
-          box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
-}
-
-.btn-yellow,
 .btn-yellow a {
   color: #ffffff;
   background-color: #efc84a;
 }
 
-.btn-yellow:hover,
-.btn-yellow:hover a {
+.btn-yellow a:hover {
   color: #ffffff;
   background-color: #eab534;
 }
 
-.btn-yellow:active,
-.btn-yellow:active a {
+.btn-yellow a:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #e5a722;
-}
-
-.btn-yellow:active {
-  -webkit-box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
-          box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  -webkit-box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
+          box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .service .container,
@@ -420,7 +418,7 @@ input[type="button"].visually-hidden {
   margin-top: 36px;
 }
 .about-lead {
-  margin: 0px;
+  margin: 0;
   margin-bottom: 33px;
   font-size: 45px;
   line-height: 45px;
@@ -428,7 +426,7 @@ input[type="button"].visually-hidden {
   color: #000000;
 }
 .about-general {
-  margin: 0px;
+  margin: 0;
   margin-bottom: 40px;
 }
 .about-work {
@@ -441,7 +439,7 @@ input[type="button"].visually-hidden {
 
 .about-worklist li{
   position: relative;
-  margin: 0px;
+  margin: 0;
   margin-bottom: 24px;
   padding-left: 37px;
 }
@@ -468,6 +466,7 @@ input[type="button"].visually-hidden {
 }
 
 .about-numbers p {
+  width: 380px;
   margin-bottom: 42px;
   font-weight: 700;
   text-transform: uppercase;
@@ -573,7 +572,7 @@ input[type="button"].visually-hidden {
 }
 
 .partners-item:nth-child(3)::after {
-  top: 0px;
+  top: 0;
   left: 240px;
 }
 .partners-item:nth-child(4)::after {
@@ -581,6 +580,7 @@ input[type="button"].visually-hidden {
 }
 
 .address {
+  position: relative;
   min-width: 1200px;
   height: 416px;
   background: url(../img/map-marker.png) no-repeat calc(50% + 215px) calc(50% - 23px), url(../img/map.jpg) no-repeat 50% 50%;
@@ -594,13 +594,9 @@ iframe {
   border: none;
 }
 
-.address {
-  position: relative;
-  height: 416px;
-}
 .address .container {
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 50%;
   margin-left: -600px;
   z-index: 1;
@@ -618,7 +614,7 @@ address {
 }
 
 .address-title {
-  margin: 0px;
+  margin: 0;
   margin-bottom: 24px;
   font-size: 18px;
   line-height: 30px;
@@ -628,7 +624,7 @@ address {
 }
 
 .address-text {
-  margin: 0px;
+  margin: 0;
   margin-bottom: 13px;
   padding-left: 2px;
   font-size: 16px;
@@ -726,12 +722,6 @@ address {
   background-color: #e74246;
 }
 
-.social-btn:active {
-  background-color: #d7373b;
-  -webkit-box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
-          box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
-}
-
 .social-btn:focus {
   outline: none;
   -webkit-box-shadow:
@@ -740,6 +730,12 @@ address {
           box-shadow:
 		0 0 0 3px #fff,
 		0 0 0 5px #a7c5f7;
+}
+
+.social-btn:active {
+  background-color: #d7373b;
+  -webkit-box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
+          box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .vk:active::before,
@@ -760,8 +756,8 @@ address {
   margin-left: -480px;
   padding: 68px 100px 84px;
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
-          box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
+  -webkit-box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
+          box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
 }
 
 .write-show {
@@ -822,7 +818,7 @@ address {
 }
 
 .write h2 {
-  margin: 0px;
+  margin: 0;
   margin-bottom: 25px;
   font-size: 45px;
   line-height: 45px;
@@ -987,13 +983,15 @@ address {
       flex-wrap: wrap;
   width: 760px;
   padding-left: 400px;
-  padding-right: 0px;
+  padding-right: 0;
 }
 
 .sorting-features {
+  width: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: flex-end;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-align: center;
@@ -1007,7 +1005,7 @@ address {
 }
 
 .sorting p {
-  margin-right: 266px;
+  width: 260px;
   font-size: 18px;
   line-height: 18px;
   color: #000000;
@@ -1024,11 +1022,11 @@ address {
   text-transform: uppercase;
 }
 
-.sorting-item:hover a {
+.sorting-item a:hover {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.sorting-item:active a,
+.sorting-item a:active,
 .sorting-item.current a {
   color: #000000;
 }
@@ -1053,11 +1051,11 @@ address {
   background: #ffffff url("../img/icon-up-dir.svg") no-repeat 0 0;
 }
 
-.sorting-direction:hover a {
+.sorting-direction a:hover {
   opacity: 0.3;
 }
 
-.sorting-direction:active a,
+.sorting-direction a:active,
 .sorting-direction.current a {
   opacity: 1;
 }
@@ -1080,8 +1078,8 @@ address {
 }
 
 .filter-price {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   margin-bottom: 54px;
   border: none;
 }
@@ -1101,7 +1099,7 @@ address {
   width: 218px;
   height: 41px;
   margin-bottom: 14px;
-  padding: 39px 21px 0px 21px;
+  padding: 39px 21px 0 21px;
   background-color: #eeeeee;
   border-radius: 5px;
 }
@@ -1121,7 +1119,7 @@ address {
   position: absolute;
   content: "";
   top: 30px;
-  left: 0px;
+  left: 0;
   width: 4px;
   height: 4px;
   padding: 0;
@@ -1167,7 +1165,7 @@ address {
 
 .price-controls input {
   width: 80px;
-  padding: 8px 0px;
+  padding: 8px 0;
   margin-left: 10px;
   font-size: 16px;
   line-height: 22px;
@@ -1184,8 +1182,8 @@ address {
 }
 
 .filter-grid {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   margin-bottom: 26px;
   border: none;
 }
@@ -1256,8 +1254,8 @@ address {
 }
 
 .filter-features {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   margin-bottom: 29px;
   border: none;
 }
@@ -1321,20 +1319,29 @@ address {
 .model-list-item::before {
   content: "";
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 360px;
   height: 40px;
   background: #eeeeee url("../img/browser.svg") no-repeat 0 0;
   opacity: 0.12;
+  border-bottom: 1px solid #4d4d4d;
 }
 
 .model-list-item:hover .model-description,
+.model-list-item:focus .model-description {
+  display: block;
+}
+
 .model-list-item:focus-within .model-description {
   display: block;
 }
 
 .model-list-item:hover::before,
+.model-list-item:focus::before {
+  opacity: 1;
+}
+
 .model-list-item:focus-within::before {
   opacity: 1;
 }
@@ -1342,7 +1349,7 @@ address {
 .model-description {
   position: absolute;
   top: 385px;
-  left: 0px;
+  left: 0;
   display: none;
   width: 240px;
   height: 179px;
@@ -1352,7 +1359,7 @@ address {
 
 .model-title {
   height: 30px;
-  margin: 0px;
+  margin: 0;
   text-align: center;
   overflow: auto;
 }
@@ -1388,6 +1395,10 @@ address {
   padding: 16px 15px;
 }
 
+.model-price:active {
+  color: #ffffff;
+}
+
 .paginator {
   margin-bottom: 60px;
 }
@@ -1402,8 +1413,8 @@ address {
 
 .paginator-item .current {
   background-color: #ffffff;
-  -webkit-box-shadow: inset 0 0 0 3px #dfdfdf;
-          box-shadow: inset 0 0 0 3px #dfdfdf;
+  border: 3px solid #dfdfdf;
+  padding: 14px 12px 12px;
 }
 
 .paginator-item a {
@@ -1420,17 +1431,15 @@ address {
 }
 
 .filter-btn:hover,
-.paginator-item:hover a {
+.paginator-item a:not(.current):hover {
   background-color: #dfdfdf;
 }
 
 .filter-btn:active,
-.paginator-item:active a {
+.paginator-item a:not(.current):active {
   background-color: #d5d5d5;
   color: rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
+          box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
-.filter-btn:active {
-  -webkit-box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
-          box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
-}
